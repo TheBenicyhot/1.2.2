@@ -22,9 +22,9 @@ def get_names(file_name):
     while (line[index] != ","):
       leader_name = leader_name + line[index] 
       index = index + 1
-    print("leader name is:", leader_name)
+  index=index+1
     # TODO 2: add the player name to the names list
-    names.append(leader_name)
+  names.append(leader_name)
   leaderboard_file.close()
 
   #  TODO 6: return the names list in place of the empty list
@@ -41,10 +41,13 @@ def get_scores(file_name):
     index = 0
 
     # TODO 3: use a while loop to index beyond the comma, skipping the player's name
-    while (line[index] != ",\n"):
-      leader_score = leader_score + line[index] 
+
+    
+    while (line[index] != ","):
+    
       index = index + 1
-    print("leader score is:", leader_score)
+  index=index+1
+  scores.append(leader_score)
     # TODO 4: use a while loop to get the score
 
     # TODO 5: add the player score to the scores list

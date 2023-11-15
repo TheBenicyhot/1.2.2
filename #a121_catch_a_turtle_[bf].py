@@ -12,7 +12,7 @@ score=0
 
 
 font_setup = ("Arial", 20, "normal")
-timer = 5
+timer = 30
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
@@ -51,7 +51,7 @@ def change_position():
  new_ypos=rand.randint(1,300)
  spot.goto(new_xpos,new_ypos)
  
- score_writer.goto(400,200)
+ score_writer.goto(300,200)
 
 
 
